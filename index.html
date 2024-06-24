@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepthought</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css" integrity="sha512-UuQ/zJlbMVAw/UU8vVBhnI4op+/tFOpQZVT+FormmIEhRSCnJWyHiBbEVgM4Uztsht41f3FzVWgLuwzUqOObKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-white pb-[6rem]">
+        <header class="bg-[#F0F0F0]/[0.5] shadow-lg shadow-black-900 py-4">
+            <div class="container w-[85%] mx-auto flex justify-between items-center">
+                <div class="flex items-center">
+                    <svg class="mx-4" width="311" height="49" viewBox="0 0 311 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.5526 49C38.1127 49 49.1053 38.031 49.1053 24.5C49.1053 10.969 38.1127 0 24.5526 0C10.9926 0 0 10.969 0 24.5C0 38.031 10.9926 49 24.5526 49Z" fill="#0029FF"/>
+                        <path d="M13.9131 26.1334C15.2692 26.1334 16.3684 25.0365 16.3684 23.6834C16.3684 22.3303 15.2692 21.2334 13.9131 21.2334C12.5571 21.2334 11.4579 22.3303 11.4579 23.6834C11.4579 25.0365 12.5571 26.1334 13.9131 26.1334Z" fill="white"/>
+                        <path opacity="0.1" d="M15.55 19.6002C16.906 19.6002 18.0053 18.5033 18.0053 17.1502C18.0053 15.7971 16.906 14.7002 15.55 14.7002C14.194 14.7002 13.0947 15.7971 13.0947 17.1502C13.0947 18.5033 14.194 19.6002 15.55 19.6002Z" fill="white"/>
+                        <path opacity="0.1" d="M15.55 32.6666C16.906 32.6666 18.0053 31.5697 18.0053 30.2166C18.0053 28.8635 16.906 27.7666 15.55 27.7666C14.194 27.7666 13.0947 28.8635 13.0947 30.2166C13.0947 31.5697 14.194 32.6666 15.55 32.6666Z" fill="white"/>
+                        <path opacity="0.1" d="M35.1926 32.6666C36.5486 32.6666 37.6478 31.5697 37.6478 30.2166C37.6478 28.8635 36.5486 27.7666 35.1926 27.7666C33.8366 27.7666 32.7373 28.8635 32.7373 30.2166C32.7373 31.5697 33.8366 32.6666 35.1926 32.6666Z" fill="white"/>
+                        <path opacity="0.1" d="M35.1926 19.6002C36.5486 19.6002 37.6478 18.5033 37.6478 17.1502C37.6478 15.7971 36.5486 14.7002 35.1926 14.7002C33.8366 14.7002 32.7373 15.7971 32.7373 17.1502C32.7373 18.5033 33.8366 19.6002 35.1926 19.6002Z" fill="white"/>
+                        <path d="M20.4601 37.567C21.8162 37.567 22.9154 36.4701 22.9154 35.117C22.9154 33.7639 21.8162 32.667 20.4601 32.667C19.1041 32.667 18.0049 33.7639 18.0049 35.117C18.0049 36.4701 19.1041 37.567 20.4601 37.567Z" fill="white"/>
+                        <path d="M30.2814 37.567C31.6374 37.567 32.7367 36.4701 32.7367 35.117C32.7367 33.7639 31.6374 32.667 30.2814 32.667C28.9254 32.667 27.8262 33.7639 27.8262 35.117C27.8262 36.4701 28.9254 37.567 30.2814 37.567Z" fill="white"/>
+                        <path d="M36.8293 26.1334C38.1853 26.1334 39.2845 25.0365 39.2845 23.6834C39.2845 22.3303 38.1853 21.2334 36.8293 21.2334C35.4733 21.2334 34.374 22.3303 34.374 23.6834C34.374 25.0365 35.4733 26.1334 36.8293 26.1334Z" fill="white"/>
+                        <path d="M25.371 26.1334C26.727 26.1334 27.8263 25.0365 27.8263 23.6834C27.8263 22.3303 26.727 21.2334 25.371 21.2334C24.015 21.2334 22.9158 22.3303 22.9158 23.6834C22.9158 25.0365 24.015 26.1334 25.371 26.1334Z" fill="white"/>
+                        <path d="M30.2816 14.6998C31.6376 14.6998 32.7368 13.6029 32.7368 12.2498C32.7368 10.8967 31.6376 9.7998 30.2816 9.7998C28.9256 9.7998 27.8263 10.8967 27.8263 12.2498C27.8263 13.6029 28.9256 14.6998 30.2816 14.6998Z" fill="white"/>
+                        <path d="M20.4601 14.6998C21.8162 14.6998 22.9154 13.6029 22.9154 12.2498C22.9154 10.8967 21.8162 9.7998 20.4601 9.7998C19.1041 9.7998 18.0049 10.8967 18.0049 12.2498C18.0049 13.6029 19.1041 14.6998 20.4601 14.6998Z" fill="white"/>
+                        <path d="M13.9131 23.6836H25.371L30.2815 35.1169H20.4605" stroke="white"/>
+                        <path d="M20.4609 12.25H30.282" stroke="white"/>
+                        <path d="M75.098 13.1645H67.9941V35.9332H75.098C82.5948 35.9332 87.2107 31.6538 87.2107 24.5978C87.2107 17.5418 82.5948 13.1645 75.098 13.1645ZM70.9732 33.4832V15.5818H75.098C81.0561 15.5818 84.1661 19.0445 84.1661 24.5978C84.1661 30.1512 81.0561 33.4832 75.098 33.4832H70.9732ZM103.416 13.1318H91.1401V35.9332H103.416V33.4832H94.1191V25.6432H102.434V23.1932H94.1191V15.5818H103.416V13.1318ZM120.2 13.1318H107.924V35.9332H120.2V33.4832H110.903V25.6432H119.218V23.1932H110.903V15.5818H120.2V13.1318ZM127.687 23.9772V15.6145H132.074C135.479 15.6145 136.919 17.1825 136.919 19.8285C136.919 22.3765 135.479 23.9772 132.074 23.9772H127.687ZM139.963 19.8285C139.963 16.1045 137.443 13.1645 132.074 13.1645H124.708V35.9332H127.687V26.4272H132.074C137.737 26.4272 139.963 23.2912 139.963 19.8285Z" fill="black"/>
+                        <path d="M150.659 17.4768H156.748V35.9335H162.346V17.4768H168.436V13.0015H150.659V17.4768ZM185.551 35.9335H191.149V13.0015H185.551V21.9848H176.843V13.0015H171.245V35.9335H176.843V26.4928H185.551V35.9335ZM217.811 24.4021C217.811 17.5095 212.606 12.6748 206.059 12.6748C199.544 12.6748 194.241 17.5095 194.241 24.4021C194.241 31.2948 199.544 36.1621 206.059 36.1621C212.573 36.1621 217.811 31.2948 217.811 24.4021ZM199.97 24.4021C199.97 20.3188 202.327 17.7381 206.059 17.7381C209.725 17.7381 212.115 20.3188 212.115 24.4021C212.115 28.4201 209.725 31.0661 206.059 31.0661C202.327 31.0661 199.97 28.4201 199.97 24.4021ZM220.826 26.6888C220.826 33.0261 224.984 36.1621 230.32 36.1621C235.623 36.1621 240.076 33.0261 240.076 26.6888V13.0015H234.478V26.7215C234.478 29.4328 233.07 31.0008 230.418 31.0008C227.767 31.0008 226.424 29.4328 226.424 26.7215V13.0015H220.826V26.6888ZM254.745 12.7401C247.87 12.7401 243.058 17.5748 243.058 24.4348C243.058 31.2948 247.903 36.0968 254.778 36.0968C260.834 36.0968 264.664 32.1441 265.843 28.1915V22.9975H253.665V27.1135H260.769C259.917 29.6941 257.986 31.1641 255.203 31.1641C251.177 31.1641 248.754 28.6815 248.754 24.4348C248.754 20.4495 251.144 17.9015 254.745 17.9015C256.84 17.9015 258.412 18.7181 259.263 20.2535H265.45C264.239 15.5495 260.245 12.7401 254.745 12.7401ZM283.249 35.9335H288.847V13.0015H283.249V21.9848H274.541V13.0015H268.943V35.9335H274.541V26.4928H283.249V35.9335ZM291.644 17.4768H297.733V35.9335H303.331V17.4768H309.42V13.0015H291.644V17.4768Z" fill="#0029FF"/>
+                        </svg>
+
+                </div>
+                <div class="flex items-center">
+                    <div class="flex">
+                        <svg class="mx-2" width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="15" cy="16.183" rx="15" ry="16.183" fill="#3683F0"/>
+                            <path d="M15.2031 11.7139L9.8125 16.167V20.9424C9.8125 21.2061 10.0176 21.4111 10.2812 21.4111H13.5625C13.7969 21.4111 14.002 21.2061 14.002 20.9424V18.1299C14.002 17.8955 14.2363 17.6611 14.4707 17.6611H16.3457C16.6094 17.6611 16.8145 17.8955 16.8145 18.1299V20.9424C16.8145 21.2061 17.0488 21.4111 17.2832 21.4111H20.5938C20.8281 21.4111 21.0625 21.2061 21.0625 20.9424V16.1377L15.6426 11.7139C15.584 11.6553 15.4961 11.626 15.4375 11.626C15.3496 11.626 15.2617 11.6553 15.2031 11.7139ZM23.7285 14.7314L21.2969 12.71V8.66699C21.2969 8.46191 21.1211 8.31543 20.9453 8.31543H19.3047C19.0996 8.31543 18.9531 8.46191 18.9531 8.66699V10.7764L16.3164 8.6084C16.082 8.43262 15.7598 8.31543 15.4375 8.31543C15.0859 8.31543 14.7637 8.43262 14.5293 8.6084L7.11719 14.7314C7.0293 14.79 6.9707 14.9072 6.9707 14.9951C6.9707 15.083 7.0293 15.1709 7.05859 15.2295L7.82031 16.1377C7.87891 16.2256 7.9668 16.2549 8.08398 16.2549C8.17188 16.2549 8.25977 16.2256 8.31836 16.167L15.2031 10.5127C15.2617 10.4541 15.3496 10.4248 15.4375 10.4248C15.4961 10.4248 15.584 10.4541 15.6426 10.5127L22.5273 16.167C22.5859 16.2256 22.6738 16.2549 22.7617 16.2549C22.8789 16.2549 22.9668 16.2256 23.0254 16.1377L23.7871 15.2295C23.8457 15.1709 23.875 15.083 23.875 14.9951C23.875 14.9072 23.8164 14.79 23.7285 14.7314Z" fill="white"/>
+                            </svg>                            
+                            <svg class="mx-2" width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="15" cy="16.183" rx="15" ry="16.183" fill="#3683F0"/>
+                                <path d="M22.6777 18.9502L19.25 15.5225C18.5469 14.8486 17.5508 14.7021 16.7305 15.1123L13.625 12.0068V10.1611L9.875 7.34863L8 9.22363L10.8125 12.9736H12.6289L15.7344 16.1084C15.3535 16.9287 15.4707 17.9248 16.1445 18.5986L19.5723 22.0557C20.0117 22.4658 20.6855 22.4658 21.125 22.0557L22.6777 20.5029C23.0879 20.0635 23.0879 19.3896 22.6777 18.9502ZM17.6973 13.9404C18.5469 13.9404 19.3086 14.2627 19.8945 14.8486L20.4805 15.4346C20.9199 15.2295 21.3594 14.9365 21.7402 14.5557C22.8242 13.4717 23.2051 11.9482 22.8535 10.5713C22.7949 10.3076 22.4727 10.2197 22.2676 10.3955L20.0996 12.5928L18.1074 12.2412L17.7852 10.249L19.9531 8.08105C20.1582 7.87598 20.041 7.55371 19.7773 7.49512C18.4004 7.14355 16.877 7.52441 15.793 8.6084C14.9434 9.42871 14.5625 10.542 14.5625 11.626L16.9941 14.0283C17.2285 13.9697 17.4629 13.9404 17.6973 13.9404ZM14.6504 16.3428L13.0098 14.7021L8.52734 19.1553C7.79492 19.8877 7.79492 21.0889 8.52734 21.8213C9.25977 22.5537 10.4609 22.5537 11.1934 21.8213L14.7969 18.1885C14.5918 17.6025 14.5039 16.9873 14.6504 16.3428ZM9.875 21.1768C9.46484 21.1768 9.17188 20.8838 9.17188 20.4736C9.17188 20.0928 9.46484 19.7705 9.875 19.7705C10.2559 19.7705 10.5781 20.0928 10.5781 20.4736C10.5781 20.8838 10.2559 21.1768 9.875 21.1768Z" fill="white"/>
+                                </svg>
+                                <svg class="mx-2" width="32" height="34" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.576 0.433594C6.98751 0.433594 0 7.94002 0 17.1664C0 26.3928 6.98751 33.8992 15.576 33.8992C24.1646 33.8992 31.1521 26.3928 31.1521 17.1664C31.1521 7.94002 24.1646 0.433594 15.576 0.433594ZM15.576 27.4635C14.011 27.4635 12.7664 26.7507 12.5994 25.2448C12.595 25.1998 12.5994 25.1543 12.6125 25.1113C12.6255 25.0682 12.6469 25.0286 12.6752 24.9951C12.7034 24.9615 12.738 24.9347 12.7765 24.9165C12.8151 24.8983 12.8568 24.889 12.8989 24.8892H18.2494C18.292 24.8889 18.3341 24.8983 18.373 24.9168C18.4119 24.9354 18.4467 24.9626 18.475 24.9967C18.5034 25.0308 18.5246 25.071 18.5374 25.1146C18.5501 25.1582 18.5541 25.2042 18.549 25.2496C18.358 26.7274 17.1247 27.4635 15.576 27.4635ZM22.9148 23.6021H8.23733C7.3507 23.6021 6.88941 22.3954 7.39937 21.7518C8.62224 20.196 9.48641 19.542 9.48641 15.2518C9.48641 11.3204 11.4139 9.92543 13.006 9.24486C13.1156 9.19581 13.2143 9.12265 13.296 9.0301C13.3776 8.93754 13.4403 8.82764 13.48 8.70748C13.7563 7.72201 14.5381 6.86928 15.576 6.86928C16.614 6.86928 17.3943 7.72201 17.6728 8.70828C17.7128 8.82843 17.7756 8.93828 17.8574 9.03082C17.9391 9.12336 18.038 9.19653 18.1476 9.24566C19.7359 9.92463 21.6672 11.322 21.6672 15.2526C21.6672 19.5428 22.5306 20.1968 23.7535 21.7526C24.2582 22.3954 23.7962 23.6021 22.9148 23.6021Z" fill="#3683F0"/>
+                                    </svg>
+                                <img class="mx-2" src="./images/Ellipse 53.png" alt="img">   
+                                <svg class="h-7 mx-2 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg>
+                            </div>
+                </div>
+            </div>
+        </header>
+        <section class="w-[78%] mx-auto">
+        <div class=" py-4">
+            <div class="bg-white rounded-md  p-10">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-3xl font-bold text-[#0029FF]">Technical Project Management</h2>
+                    <button class="bg-[#0029FF] hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg">Submit Task</button>
+                </div>
+                <div class="bg-[#E9ECEF] p-5 rounded">
+                    <h3 class="text-xl  font-bold mb-2 " id="task-title">Explore the world of management</h3>
+                    <p class="text-black-900 text-md  mb-1 ">As a project manager, you play an important role in leading a project through initiation, planning, execution, monitoring, controlling and completion. How do you want to manage each and every step of your life?</p>
+                </div>  
+            </div>
+            <div class="grid grid-cols-2 gap-12 mt-6 mx-16">
+                <div class="bg-white rounded-2xl shadow-lg shadow-black-900 ">
+                    <div class="flex bg-black text-center justify-center rounded-t-2xl shadow-lg shadow-black-900 ">
+                        <h4 class="text-lg text-white font-semibold rounded-t-2xl p-2 mx-auto">Technical Project Management</h4>
+                        <svg class="text-center mt-[1rem] mr-[1.5rem]" xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 512 512"><path fill="#ffffff" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                    </div>
+                    <p class="text-gray-600 mb-2 p-3"><span class="text-black font-semibold ">Description:</span> Story of Alignment Scope of Agility Specific Accountable Staggering Approach</p>
+                    <div class="relative">
+                         <iframe class="w-full h-[10rem]"width='600' height="400" src="https://www.youtube.com/embed/TiMRwri1xJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                         <div class="absolute bottom-4 right-4 bg-white rounded-full p-2 shadow-lg shadow-black-900 cursor-pointer">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.75 18.75h-7.5a2.25 2.25 0 01-2.25-2.25v-7.5A2.25 2.25 0 0110 6.75h7.5a2.25 2.25 0 012.25 2.25v7.5A2.25 2.25 0 0114.75 18.75z" />
+                            </svg> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg shadow-black-900">
+                        <div class="flex bg-black text-center justify-center rounded-t-2xl shadow-lg shadow-black-900 ">
+                            <h4 class="text-lg text-white font-semibold rounded-t-2xl p-2 mx-auto">Threadbuild</h4>
+                            <svg class="text-center mt-[1rem] mr-[1.5rem] " xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 512 512"><path fill="#ffffff" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                        </div>
+                        <p class="text-gray-600 mb-2 p-3"><span class="text-black font-semibold">Description:</span> Watch the video and threadbuild, and jot out key threads while watching the video</p>
+                    
+                    <div class="bg-white rounded-md mb-4">
+                        <div class="flex border-y-2 border-black">
+                            <svg class=" mt-1 h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+                            <h5 class="text-lg ml-10 font-semibold mb-2">Thread A</h5>
+                        </div>
+                        <div class="flex flex-wrap" >
+                            <div class="bg-[#333333]/[0.1] mx-4 flex-1 rounded-xl shadow-lg shadow-black-900  mb-2">
+                                <h5 class="flex-1 font-semibold text-md mx-4">Sub Thread 1</h5>
+                                <input type="text" placeholder="Enter text here" class="flex-1 border rounded-2xl px-3  focus:outline-none focus:ring focus:ring-blue-500 w-[100%] h-[4rem]">
+                                
+                            </div>
+                            <div class="bg-[#333333]/[0.1] mx-4 flex-1  rounded-xl shadow-lg shadow-black-900  items-center mb-2 ">
+                                <h5 class="font-semibold text-md mx-4">Sub Interpretation 1</h5>
+                                <input type="text" placeholder="Enter text here" class="flex-1 border rounded-2xl px-3 focus:outline-none focus:ring focus:ring-blue-500 w-[100%] h-[4rem]">
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap my-2 items-center mb-2">
+                            <select class=" mx-3 bg-white border rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-500">
+                                <option value="">Select Category</option>
+                                <option value="1">Category 1</option>
+                                <option value="2">Category 2</option>
+                            </select>
+                            <select class="mx-3 bg-white border rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-500">
+                                <option value="">Select Process</option>
+                                <option value="1">Process 1</option>
+                                <option value="2">Process 2</option>
+                            </select>
+                        </div>
+                        <button class="flex mx-3 bg-[#0029FF] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><svg class="mt-1 mr-2 " xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512"><path fill="#ffffff" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>Sub-Thread</button>
+                    </div>
+                    <div class="flex bg-white mb-8 rounded-xl">   
+                        <div class="bg-[#333333]/[0.1] mx-4 flex-1 rounded-xl shadow-lg shadow-black-900 items-center ">
+                            <h5 class="text-lg font-semibold mb-1  mx-4">Summary for Thread A</h5>
+                            <textarea placeholder="Enter text here" class="flex-1 h-[6rem] w-full resize-none border rounded-xl px-3 py-2 focus:outline-none focus:ring focus:ring-blue-500"></textarea>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-12 mt-16 mx-16">
+                <div class="bg-white rounded-2xl shadow-lg shadow-black-900">
+                    <div class="flex bg-black text-center justify-center rounded-t-2xl shadow-lg shadow-black-900 ">
+                        <h4 class="text-lg text-white font-semibold rounded-t-2xl p-2 mx-auto">Structure your Pointers</h4>
+                        <svg class="text-center  mt-[1rem] mr-[1.5rem]" xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 512 512"><path fill="#ffffff" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                    </div>
+                    <p class="text-gray-600 mb-2 p-4"><span class="text-black font-semibold">Description:</span> Write a 300-400 word article from your thread. Publish your understanding and showcase your understanding to the entire world</p>
+                    <div class="border-t-2 border-black p-4 mb-2">
+                        <h5 class="text-lg font-semibold mb-2">Title</h5>
+                        <input type="text" placeholder="Enter title here" class="h-[3rem] w-full shadow-lg shadow-black-900 border rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-500">
+                    </div>
+                    <div class=" p-4 rounded-xl">
+                        <h5 class="text-lg font-semibold mb-2">Content</h5>
+                        <div class="w-100% rounded-t-xl bg-[#0000002E]/[0.02] shadow-lg shadow-black-900">
+                            <div class="flex flex-wrap flex-1 text-gray-600">
+                                <p class="mx-1 my-1">File</p>
+                                <p class="mx-1 my-1">Edit</p><p class="mx-1 my-1">View</p>
+                                <p class="mx-1 my-1">Insert</p><p class="mx-1 my-1">Format</p>
+                                <p class="mx-1 my-1">Tools</p><p class="mx-1 my-1">Table</p>
+                                <p class="mx-1 my-1">Help</p>
+                            </div>
+                            <div class="flex flex-1 flex-wrap text-gray-600">
+                                <svg class="mx-2" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.79978 3.1501L3.15002 7.13561M3.15002 7.13561L7.79978 11.1211M3.15002 7.13561L13.85 7.13561C16.0592 7.13561 17.85 8.92647 17.85 11.1356V14.8501" stroke="#616161" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                <svg class="mx-2" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.9431 3.32505L16.15 7.53197M16.15 7.53197L11.9431 11.7389M16.15 7.53197H6.85003C4.64089 7.53197 2.85003 9.32284 2.85003 11.532V15.675" stroke="#616161" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>   
+                                <svg class="mx-2" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.5961 1.8999H17.0995M17.0995 1.8999V7.40335M17.0995 1.8999L11.5961 7.40335M7.40397 17.0999H1.90052M1.90052 17.0999V11.5964M1.90052 17.0999L7.60052 11.3999M17.1 11.596V17.0994M17.1 17.0994H11.5966M17.1 17.0994L11.5966 11.596M1.90002 7.40385L1.90002 1.9004M1.90002 1.9004L7.40348 1.9004M1.90002 1.9004L7.60002 7.6004" stroke="#616161" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                     
+                                <input class="rounded px-2 mx-2 min-w-[4rem] h-5 bg-[#0000002E]/[0.1]" type="text" placeholder="Paragraph">
+                                <svg class="h-6 w-6 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"/></svg>
+                            </div>
+                        </div>
+                        <textarea placeholder="Enter content here" class="shadow-lg shadow-black-900 h-[8rem] w-full resize-none border rounded-x-xl rounded-b-xl px-3 py-2 focus:outline-none focus:ring focus:ring-blue-500"></textarea>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg shadow-black-900">
+                    <div class="flex bg-black text-center justify-center rounded-t-2xl shadow-lg shadow-black-900 ">
+                        <h4 class="text-lg text-white font-semibold rounded-t-2xl p-2 mx-auto">4SA Method</h4>
+                        <svg class="text-center mt-[1rem] mr-[1.5rem] " xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 512 512"><path fill="#ffffff" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                    </div>
+                    <p class="text-gray-600 mb-2 p-3"><span class="text-black font-semibold">Description:</span> To Explore more read more</p>
+                    <div class=" p-4 rounded-md mb-4 cursor-pointer" id="introduction">
+                        <h5 class="border border-black bg-[#F2F2F2]/[0.5] text-lg font-semibold mb-2 flex"><svg class=" mt-1 mx-2 h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+                            Introduction</h5>
+                        <p class="text-gray-600 mb-2">The 4SA Method, How to bring a idea into progress?</p>
+                        <span class="float-right cursor-pointer">See More</span>
+                        <div class="transition-all duration-300 ease-in-out overflow-hidden" id="introductionContent" style="height: 0;">
+                            <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec sed odio dui. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                        </div>
+                    </div>
+                    <div class=" p-4 rounded-md mb-4 cursor-pointer" id="threadA">
+                        <h5 class="border border-black bg-[#F2F2F2]/[0.5] text-lg font-semibold mb-2 flex"><svg class=" mt-1 mx-2 h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+                            Thread A</h5>
+                        <p class="text-gray-600 mb-2">How are you going to develop your strategy? Which method are you going to use to develop a strategy? What if the project is lengthy?</p>
+                        <span class="float-right cursor-pointer">See More</span>
+                        <div class="transition-all duration-300 ease-in-out overflow-hidden" id="threadAContent" style="height: 0;">
+                            <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec sed odio dui. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                        </div>
+                    </div>
+                    <div class="p-4 rounded-md mb-4">
+                        <h5 class="text-lg font-semibold mb-2">Example 1</h5>
+                        <p class="text-gray-600 mb-2">You have a concept, How will you put into progress?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <div class="fixed bottom-4 right-4">
+            <div class="flex flex-col flex-nowrap my-2">
+                <button class="rounded-full my-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class=" h-11 w-11" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#0029ff" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                </button>
+                <button class="bg-[#0029FF] my-1  rounded-full p-2 ">
+                    <img class="h-8 w-8" src="./images/meeting 1.png" alt="ing">
+                </button>
+                <button class="bg-[#0029ff] my-1 rounded-full p-2">
+                    <img class="h-8 w-8" src="./images/schedule (1) 1.png" alt="img">
+                </button>
+            </div>
+            
+        </div>
+        <div class="absolute top-[5.5rem] left-4 ">
+            <div id="journey">
+            <div id="journeyContent" class="relative right-[22rem] transition-all duration-300 ease-in-out overflow-hidden bg-white h-[40rem] w-[25rem] rounded-2xl shadow-lg shadow-black-900">
+                <div class="flex bg-black text-center justify-center rounded-t-2xl shadow-lg shadow-black-900 ">
+                    <h4 class="mx-auto text-lg text-white font-semibold rounded-t-2xl p-2">Journey Board</h4>
+                    <svg class="cursor-pointer ml-auto mr-4 mt-3" xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path fill="#ffffff" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM281 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L136 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l182.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L393 239c9.4 9.4 9.4 24.6 0 33.9L281 385z"/></svg>
+                </div>            
+            <ul style="list-style-type:disc;" class="mx-4 my-4">
+                <li class="mx-4 text-lg font-bold">Explore the world of management</li>
+                <li class="mx-4 mt-4 text-lg ">Explore the world of management</li>
+                <li class="mx-4 text-lg ">Explore the world of management</li>
+                <li class="mx-4 text-lg ">Explore the world of management</li>
+                <li class="mx-4 text-lg ">Explore the world of management</li>
+                
+            </ul>
+                
+            </div>
+        </div>
+        </div>
+        <div class="absolute top-[9.5rem] left-4 border-2 border-[#0029FF] rounded-xl h-10 w-10 text-[#0029FF] text-center text-2xl" id="notificationSquare">1</div>
+        <div class="fixed top-[5.5rem] right-4 ">
+            <div id="notice">
+            <div id="noticeContent" class="relative left-[10rem] transition-all duration-300 ease-in-out overflow-hidden bg-white h-[24rem] w-[12rem] rounded-2xl shadow-lg shadow-black-900">
+                <div class="grid grid-cols-4 gap-4">
+                <div class="flex w-fit bg-black text-center justify-center rounded-l-2xl shadow-lg shadow-black-900 h-[24rem]" style="writing-mode: vertical-lr;text-orientation: upright;">
+                    <svg  class="h-8 w-8 cursor-pointer ml-auto mr-2 mb-2 mt-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="#ffffff" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    <h4 class="mx-auto flex flex-col text-lg text-white font-medium rounded-t-2xl p-2">Notice Board</h4>
+                </div>
+                <div class="col-start-2 col-end-4">           
+                    <ul style="list-style-type:disc;" class="mx-4 my-4">
+                        <li class="mx-4 text-lg font-bold">Notice goes here!!!</li>
+                        <li class="mx-4 mt-4 text-lg ">first notice.</li>
+                        
+                        
+                    </ul>
+                </div> 
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
